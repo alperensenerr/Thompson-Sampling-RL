@@ -9,7 +9,6 @@ import math
 N = 10000 # 10.000 tıklama
 d = 10  # toplam 10 ilan var
 
-#tiklamalar = [0] * d #o ana kadarki tıklamalar
 toplam = 0 # toplam odul
 secilenler = []
 
@@ -22,7 +21,7 @@ for n in range(1,N):
     for i in range(0,d):
         ranbeta = random.betavariate (birler[i] +1, sıfırlar[i] +1 )
         
-        if ranbeta > max_th: #
+        if ranbeta > max_th:
             max_th = ranbeta
             ad = i          
     secilenler.append(ad)
